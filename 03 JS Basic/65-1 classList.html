@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        margin: 20px;
+        transition: all 0.3s;
+      }
+
+      .red-bg {
+        background-color: #ff6b6b;
+      }
+
+      .blue-bg {
+        background-color: #4ecdc4;
+      }
+
+      .rounded {
+        border-radius: 50%;
+      }
+
+      .big {
+        transform: scale(1.2);
+      }
+
+      button {
+        margin: 5px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myBox" class="box"></div>
+
+    <button onclick="toggleColor()">สลับสี</button>
+    <button onclick="toggleRounded()">สลับความโค้ง</button>
+    <button onclick="toggleSize()">สลับขนาด</button>
+
+    <script>
+      const box = document.getElementById("myBox");
+
+      // สลับระหว่างพื้นหลังสีแดงและสีฟ้า
+      function toggleColor() {
+        if (box.classList.contains("red-bg")) {
+          box.classList.remove("red-bg");
+          box.classList.add("blue-bg");
+        } else {
+          box.classList.remove("blue-bg");
+          box.classList.add("red-bg");
+        }
+      }
+
+      // สลับระหว่างสี่เหลี่ยมและวงกลม
+      function toggleRounded() {
+        box.classList.toggle("rounded");
+      }
+
+      // สลับขนาดกล่อง
+      function toggleSize() {
+        box.classList.toggle("big");
+      }
+    </script>
+  </body>
+</html>
