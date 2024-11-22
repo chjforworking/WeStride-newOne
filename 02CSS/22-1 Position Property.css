@@ -1,0 +1,49 @@
+.box1 {
+  width: 1000px;
+  height: 1000px;
+  background-color: cadetblue;
+  position: static;
+  /*Position Static จะไม่มีอะไรเปลี่ยนแปลง*/
+}
+
+.box2 {
+  width: 80px;
+  height: 80px;
+  background-color: orangered;
+  position: relative;
+  top: 20px;
+  left: 100px;
+  /*อาจจะงงๆหน่อยเพราะ left-right สลับกัน*/
+  /*เป็นการยึดค่าตำแหน่งเดิมของตัวเองเป็นหลัก*/
+}
+
+.box3 {
+  width: 80px;
+  height: 80px;
+  background-color: seagreen;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  /*เปรียบเทียบระยะโดยวัดระยะห่างจาก Parent ของมัน*/
+  /*top200px คือ ห่างจากขอบของ parent ของมันเอง*/
+}
+
+.box4{
+    width: 80px;
+    height: 80px;
+    background-color: rebeccapurple;
+    position: fixed;
+    top: 30px;
+    /*เป็นการเทียบกับ viewport ต่อให้ยึดขยายเว็บยังไง
+    สีม่วงนี้ก็จะยัง fixed อยู่ที่ตำแหน่งเดิม*/
+}
+
+.box5{
+    width: 80px;
+    height: 80px;
+    background-color: goldenrod;
+    position: sticky;
+    top: 30px;
+    /*scroll บนลงล่างเมื่อไหร่ sticky จะอยู่ที่ตำแหน่งเดิมตลอด
+    คล้ายกับ fixed แต่ fixed คือไปทุกที่ตาม viewport*/
+}

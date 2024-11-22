@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burger Zone</title>
+    <link rel="icon" href="./burger.png" />
+  </head>
+  <body>
+    <img src="https://i.pinimg.com/736x/9b/71/80/9b7180299366cb6183ae8e185ce891bf.jpg" width="200" length="400">
+    <hr />
+    <h1>Create a burger!</h1>
+    <form action="">
+      <p>
+        <label for="protein">What type of protein would you like?</label>
+        <input type="text" id="protein" required />
+        <hr>
+      </p>
+      <p>
+        <label for="number">How many patties would you like?</label>
+        <input type="number" id="number" required>
+        <hr>
+      </p>
+      <p>
+        <label for="a">How do you want your patty cooked?</label><br>
+        Rare
+        <input type="range" id="a" min="0" max="5">
+        Well-done
+        <hr>
+      </p>
+      What toppings would you like?
+      <p>
+        <input type="checkbox" id="toppings">
+        <label for="toppings">Lecture</label>
+        
+        <input type="checkbox" id="toppings">
+        <label for="toppings">Tomato</label>
+        
+        <input type="checkbox" id="toppings">
+        <label for="toppings">Onion</label>
+        <hr>
+      </p>
+      <p>
+        Would you like to add cheese?<br>
+        <input type="radio" id="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no">
+        <label for="yes">No</label>
+        <hr>
+      </p>
+      <p>
+        <label for="bun">What type of bun would you like?</label>
+        <select id="bun">
+            <option>Sesame</option>
+            <option>Potato</option>
+            <option>Pretzel</option>
+        </select>
+        <hr>
+      </p>
+      <p>
+        <label for="sauce">What type of sauce would you like?</label>
+        <input list="sauces" id="sauce">
+        <datalist id="sauces">
+            <option value="Ketchup">
+            <option value="Mayo">
+            <option value="Mustard">
+        </datalist>
+        <hr>
+      </p>
+      <p>
+        <label for="additional">Anything else you want to add?</label><br>
+        <textarea id="additional" cols="50" rows="5"></textarea>
+        <hr>
+      </p>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

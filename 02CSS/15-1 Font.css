@@ -1,0 +1,10 @@
+p:nth-child(1) {
+  font-weight:bold;
+}
+p:nth-child(2) {
+  font-size: 15px;
+}
+
+p:nth-child(3){
+    font-family:garamond,sans-serif;
+}

@@ -1,0 +1,62 @@
+body{
+    background-color: gray;
+}
+
+
+.box1,.box2,.box3,.box4{
+    width: 300px;
+    height:300px;
+    border: 1px solid black;
+    position: absolute;
+}
+.box1{
+    background-color: red;
+    z-index: 4;
+    top: 150px;
+    left: 300px;
+    rotate: -12deg;
+}
+
+.box2{
+    background-color: yellow;
+    z-index: 3;
+    top: 150px;
+    left: 300px;
+    rotate: 9deg;
+}
+
+.box3{
+    background-color: aquamarine;
+    z-index: 2;
+    top: 120px;
+    left: 302px;
+    rotate: -5deg;
+}
+
+.box4
+{
+    background-color: green;
+    z-index: 1;
+    top: 140px;
+    left: 310px;
+    rotate: 3deg;
+}
+
+.box1:hover{
+    scale: 1.1;
+}
+.box2:hover{
+    scale: 1.1;
+}
+.box3:hover{
+    scale: 1.1;
+}
+.box4:hover{
+    scale: 1.1;
+}
+
+.box1:active{
+    top:150px;
+    left: 10px;
+    rotate: 0deg;
+}

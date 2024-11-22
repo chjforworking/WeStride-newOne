@@ -1,0 +1,28 @@
+.transition{
+    color: aliceblue;
+    background-color: firebrick;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    transition-property: margin-left;
+    transition-duration: 5s;
+}
+.container:hover .transition{
+    margin-left: 800px;
+}
+
+.box1{
+    transition-delay: 0.1s;
+}
+.box2{
+    transition-delay: 0.2s;
+}
+.box3{
+    transition-delay: 0.3s;
+}
+.box4{
+    transition-delay: 0.4s;
+}
+.box5{
+    transition-delay: 0.5s;
+}

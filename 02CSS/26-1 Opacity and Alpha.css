@@ -1,0 +1,21 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    margin: 10px;
+}
+
+.Opacity1{
+    opacity: 1.00;
+}
+
+.Opacity2{
+    opacity: 0.75;
+}
+
+.Opacity3{
+    opacity: 0.50;
+}
+.Alpha{
+    background-color: rgba(0, 255, 119, 0.176);
+}

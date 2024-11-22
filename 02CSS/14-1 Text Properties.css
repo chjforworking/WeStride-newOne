@@ -1,0 +1,14 @@
+p {
+  text-align: center;
+}
+h1 {
+  text-decoration: underline overline #950515;
+}
+
+h2{
+    letter-spacing: 5px;
+}
+
+h3{
+    line-height: 100px;
+}

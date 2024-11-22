@@ -1,0 +1,23 @@
+.container{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 200px minmax(50px,auto);
+    gap: 10px 50px ;
+
+}
+
+.header{
+    background-color: firebrick;
+}
+
+.slidebar{
+    background-color: darkslategray;
+}
+
+.main{
+    background-color: darkmagenta;
+}
+
+.footer{
+    background-color: seagreen;
+}

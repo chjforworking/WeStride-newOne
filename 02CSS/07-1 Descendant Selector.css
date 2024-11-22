@@ -1,0 +1,7 @@
+/*1.Descendant Selector(space)*/
+div h1{color:aqua;}
+div h3{color:salmon;}
+p span{color:goldenrod;}
+
+/*Class Selector*/
+.paragraph span {color:goldenrod;}

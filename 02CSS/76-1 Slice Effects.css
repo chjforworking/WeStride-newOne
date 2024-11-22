@@ -1,0 +1,57 @@
+body{
+    background-color: slategrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    margin-top: 48px;
+}
+
+.button{
+    position: relative;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 24px;
+    margin: 24px;
+    overflow: hidden;
+}
+.button.vertical span{
+    position: relative;
+    z-index: 2;
+    transition: color 2s;
+}
+
+.button.vertical:hover span{
+    color: white;
+}
+
+.button.vertical::before,
+.button.vertical::after{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: teal;
+    z-index: 1;
+}
+
+.button.vertical::before{
+    left: 0;
+    top: -100%;
+    transition: top 2s;
+}
+.button.vertical::after{
+    right: 0;
+    bottom:-100%;
+    transition: bottom 2s;
+}
+
+.button.vertical:hover::before{
+    top: 0%;
+}
+
+.button.vertical:hover::after{
+    bottom:0%;
+}

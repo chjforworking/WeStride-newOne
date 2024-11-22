@@ -1,0 +1,16 @@
+h2::first-letter {
+  font-size: 40px;
+  color: red;
+}
+
+p::first-line {
+  background-color: aquamarine;
+}
+
+h2::selection {
+  background-color: greenyellow;
+}
+*{}
+::selection {
+  background-color: violet;
+}

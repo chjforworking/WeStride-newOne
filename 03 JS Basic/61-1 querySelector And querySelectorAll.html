@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ใช้ tag -->
+    <h1>หัวข้อ 1</h1>
+    <h1>หัวข้อ 2</h1>
+    <!-- ใช้ class -->
+    <div class="box">กล่อง 1</div>
+    <div class="box">กล่อง 2</div>
+    <!-- ใช้ id -->
+    <p id="special">ข้อความพิเศษ</p>
+
+    <script>
+      // querySelector - เลือกแค่ element แรกที่เจอ
+      let firstH1 = document.querySelector("h1"); // เลือก h1 แรก
+      firstH1.style.color = "red";
+
+      let firstBox = document.querySelector(".box"); // เลือก class='box' แรก
+      firstBox.style.backgroundColor = "yellow";
+
+      let special = document.querySelector("#special"); // เลือก id='special'
+      special.style.fontSize = "20px";
+
+      // querySelectorAll - เลือกทุก elements
+      let allH1 = document.querySelectorAll("h1"); // เลือกทุก h1
+      allH1.forEach((h1) => {
+        h1.style.border = "1px solid black";
+      });
+
+      let allBoxes = document.querySelectorAll(".box"); // เลือกทุก class='box'
+      allBoxes.forEach((box) => {
+        box.style.padding = "10px";
+      });
+    </script>
+  </body>
+</html>

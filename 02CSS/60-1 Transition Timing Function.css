@@ -1,0 +1,41 @@
+.transition{
+    color: white;
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    transition-property: margin-left
+    ;
+    transition-duration: 2s;
+}
+.container{
+    background-color: cadetblue;
+    margin: 100px;
+    padding: 10px;
+}
+.container:hover .transition{
+    margin-left: 500px;
+}
+
+.ease{
+    transition-timing-function: ease;
+}
+.ease-in{
+    transition-timing-function: ease-in;
+}
+.ease-out{
+    transition-timing-function: ease-out;
+}
+.ease-in-out{
+    transition-timing-function: ease-in-out;
+}
+.linear{
+    transition-timing-function: linear;
+}
+.step-start{
+    transition-timing-function: steps(5,start);
+}
+.step-end{
+    transition-timing-function: steps(7,end);
+}
+

@@ -1,0 +1,26 @@
+.container{
+    width: 400px;
+    height: 400px;
+    background-color: teal;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.container2{
+    width: 400px;
+    height: 400px;
+    background-color: goldenrod;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    border: 1px white solid;
+}

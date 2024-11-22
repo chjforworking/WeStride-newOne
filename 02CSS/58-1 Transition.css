@@ -1,0 +1,12 @@
+.box{
+    width: 200px;
+    height: 80px;
+    background-color: goldenrod;
+    margin: 0 auto;
+    transition: background-color 3s;
+
+}
+
+.box:hover{
+    background-color: green;
+}

@@ -1,0 +1,71 @@
+body{
+    background-color: crimson;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.head{
+    margin-top: 60px;
+}
+.button{
+    position: relative;
+    font-size: 24px;
+    padding: 20px;
+    margin: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.button.top{
+    overflow: hidden;
+}
+
+.button.top::before{
+    content: '';
+    position: absolute;
+    background-color: yellow;
+    width: 100%;
+    height: 100%;
+    top:-100%;
+    left: 0;
+    z-index: 1;
+    transition: top 3s ease-in-out;
+}
+
+.button.top:hover::before{
+    top: 0;
+}
+
+.button.top span{
+    position: relative;
+    z-index: 2;
+    transition: color 3s;
+}
+
+
+
+.button.bottom{
+    overflow: hidden;
+}
+
+.button.bottom::before{
+    content: '';
+    position: absolute;
+    background-color: yellow;
+    width: 100%;
+    height: 100%;
+    bottom:-100%;
+    left: 0;
+    z-index: 1;
+    transition: bottom 3s ease-in-out;
+}
+
+.button.bottom:hover::before{
+    bottom: 0;
+}
+
+.button.bottom span{
+    position: relative;
+    z-index: 2;
+    transition: color 3s;
+}

@@ -1,0 +1,29 @@
+body{
+    background-color: firebrick;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page-title{
+    margin-top: 30px;
+}
+.button{
+    border: 0;
+    background-color: gray;
+    font-size: 24px;
+    padding: 0;
+    margin: 20px;
+    cursor: pointer;
+    outline: none;
+    transition: transform 1s ease-in-out;
+}
+
+.button.grow:hover{
+    transform: scale(1.2);
+}
+
+.button.shrink:hover{
+    transform: scale(0.8);
+}

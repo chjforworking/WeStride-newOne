@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>THIS IS H1</h1>
+    <h2>THIS IS H2</h2>
+    <h3>THIS IS H3</h3>
+    <div class="classie">THIS IS class</div>
+    <script>
+        let h1 = document.getElementsByTagName('h1')[0]; // ต้องใส่ [0]
+        h1.style.color = 'red';
+        let h2 = document.getElementsByTagName('h2')[0];
+        h2.style.color = 'green';
+        let className = document.getElementsByClassName('classie')[0];
+        className.style.color = 'blue';
+    </script>
+</body>
+</html>

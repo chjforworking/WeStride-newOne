@@ -1,0 +1,32 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "side main main main"
+    "footer footer footer footer";
+  grid-template-rows: 80px 300px 80px;
+}
+
+.header {
+  background-color: cornflowerblue;
+  text-align: center;
+  grid-area: header;
+}
+
+.side {
+  background-color: tomato;
+  text-align: center;
+  grid-area: side;
+}
+
+.main {
+  background-color: darkolivegreen;
+  text-align: center;
+  grid-area: main;
+}
+
+.footer {
+  background-color: deeppink;
+  text-align: center;
+  grid-area: footer;
+}

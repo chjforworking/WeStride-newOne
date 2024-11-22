@@ -1,0 +1,4 @@
+button:hover{background-color: yellow;color:black;}
+button:active{background-color: goldenrod;color:white;}
+p:nth-of-type(2){color:green}
+p:nth-of-type(3){color:red;}

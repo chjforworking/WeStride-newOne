@@ -1,0 +1,21 @@
+.container{
+    background-color: goldenrod;
+    
+    display: flex;
+}
+
+.box{
+    width: 120px;
+    height: 80px;
+    background-color: teal;
+    border: 1px solid black;
+    flex-basis: 100px;
+}
+
+#fifth{
+    flex-grow: 1;
+}
+
+#sixth{
+    flex-shrink: 6;
+}

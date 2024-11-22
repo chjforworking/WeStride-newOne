@@ -1,0 +1,223 @@
+.container{
+    background-color: tomato;
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: repeat(4,100px);
+    gap: 10px;
+    height: 500px;
+    justify-content: flex-end;
+}
+
+.box1{
+    background-color: teal;
+}
+.box2{
+    background-color: teal;
+}
+.box3{
+    background-color: teal;
+}
+.box4{
+    background-color: teal;
+}
+.box5{
+    background-color: teal;
+}
+.box6{
+    background-color: teal;
+}
+.box7{
+    background-color: teal;
+}
+.box8{
+    background-color: teal;
+}
+.box9{
+    background-color: teal;
+}
+
+.container2{
+    background-color: burlywood;
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: repeat(4,100px);
+    gap: 10px;
+    height: 500px;
+    justify-items: end;
+}
+
+.box1{
+    background-color: teal;
+}
+.box2{
+    background-color: teal;
+}
+.box3{
+    background-color: teal;
+}
+.box4{
+    background-color: teal;
+}
+.box5{
+    background-color: teal;
+}
+.box6{
+    background-color: teal;
+}
+.box7{
+    background-color: teal;
+}
+.box8{
+    background-color: teal;
+}
+.box9{
+    background-color: teal;
+}
+
+.container3{
+    background-color: steelblue;
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: repeat(4,100px);
+    gap: 10px;
+    height: 500px;
+    align-content: end;
+}
+.box1{
+    background-color: teal;
+}
+.box2{
+    background-color: teal;
+}
+.box3{
+    background-color: teal;
+}
+.box4{
+    background-color: teal;
+}
+.box5{
+    background-color: teal;
+}
+.box6{
+    background-color: teal;
+}
+.box7{
+    background-color: teal;
+}
+.box8{
+    background-color: teal;
+}
+.box9{
+    background-color: teal;
+}
+
+.container4{
+    background-color: crimson;
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: repeat(4,100px);
+    gap: 10px;
+    height: 500px;
+    align-items: end;
+}
+.box1{
+    background-color: teal;
+}
+.box2{
+    background-color: teal;
+}
+.box3{
+    background-color: teal;
+}
+.box4{
+    background-color: teal;
+}
+.box5{
+    background-color: teal;
+}
+.box6{
+    background-color: teal;
+}
+.box7{
+    background-color: teal;
+}
+.box8{
+    background-color: teal;
+}
+.box9{
+    background-color: teal;
+}
+
+.container5{
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: repeat(4,100px);
+    gap: 10px;
+    height: 500px;
+}
+.box1{
+    background-color: teal;
+}
+.box21{
+    background-color: teal;
+    justify-self: end;
+}
+.box3{
+    background-color: teal;
+}
+.box4{
+    background-color: teal;
+}
+.box5{
+    background-color: teal;
+}
+.box6{
+    background-color: teal;
+}
+.box7{
+    background-color: teal;
+}
+.box8{
+    background-color: teal;
+}
+.box9{
+    background-color: teal;
+}
+
+.container6{
+    background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: repeat(4,100px);
+    gap: 10px;
+    height: 500px;
+}
+.box1{
+    background-color: teal;
+}
+.box22{
+    background-color: teal;
+    align-self: end;
+}
+.box3{
+    background-color: teal;
+}
+.box4{
+    background-color: teal;
+}
+.box5{
+    background-color: teal;
+}
+.box6{
+    background-color: teal;
+}
+.box7{
+    background-color: teal;
+}
+.box8{
+    background-color: teal;
+}
+.box9{
+    background-color: teal;
+}

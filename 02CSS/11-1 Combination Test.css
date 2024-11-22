@@ -1,0 +1,4 @@
+div h1{color:purple;}
+div>h2{color:red;}
+h3+p{color:goldenrod;}
+h4~p{color:yellowgreen;}

@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.pONE{
+    background-color: teal;
+}
+
+.pTWO{
+    background-color: coral;
+}
+
+.pTHREE{
+    background-color: cornflowerblue;
+}
+
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: goout;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+    @keyframes goout{
+        0%{transform: translate(0px,0px);}
+        50%{transform: translate(200px,0px);}
+    }

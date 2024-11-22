@@ -1,0 +1,56 @@
+.circle{
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: darkblue;
+    transition-property: all;
+    transition-duration: 3s;
+    transition-timing-function: step(4,jump-start);
+    transition-delay: 3s;
+
+    /*transition:all 3s linear 1s;*/
+    /*นี่คือรูปแบบการเขียน short hand โดยไม่ต้องเขียน4บรรทัด*/
+    /*ลำดับเป็นสิ่งสำคัญมาก property duration delay*/
+
+}
+
+.circle:hover{
+    border-radius: 100%;
+    color: black;
+    background-color: darkgoldenrod
+}
+
+.timingFunction{
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    color: white;
+    transition-property: width;
+    transition-duration: 5s;
+}
+
+.timingFunction:hover{
+    width: 300px;
+    height: 100px;
+}
+
+.linear{
+    transition-timing-function: linear;
+}
+
+.steps{
+    transition-timing-function: steps(4,jump-start);
+}
+
+.ease-in{
+    transition-timing-function: ease-in;
+}
+
+.ease-out{
+    transition-timing-function: ease-out;
+}
+
+.ease-in-out{
+    transition-timing-function: ease-in-out;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="iH">Hello World</h1>
+    <h1 class="tc">Hello World</h1>
+    <h1 class="it">Hello World</h1>
+    <script>
+      //ใช้เมื่อต้องการแก้ style ของ text
+      document.querySelector(".iH").innerHTML = "<i>Hello World</i>";
+      //ใช้เมื่อต้องการแก้ text แต่จะเป็นการแก้ raw data
+      document.querySelector(".tc").textContent = "<i>Hello World</i>";
+      //ใช้เมื่อต้องการแก้แค่ตัว text
+      document.querySelector(".it").innerText = "<i>Hello World</i>";
+    </script>
+  </body>
+</html>

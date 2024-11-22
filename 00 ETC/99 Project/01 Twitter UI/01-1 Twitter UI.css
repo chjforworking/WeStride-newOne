@@ -1,0 +1,286 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  background-color: black;
+  margin: 0;
+}
+.side-bar , .search-box{
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+.search-box{
+  justify-content: flex-start;
+}
+.side-bar-container,
+.search-box-container {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 100%;
+  padding: 0px 12px;
+}
+.search-box-container{
+  width: 350px;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.search-box-container > input[type='text']{
+  background-color: #202327;
+  padding: 12px;
+  border-radius: 24px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+.nav-menu {
+  width: 100%;
+  height: 58px;
+  padding: 4px 0px;
+  margin-top: 4px;
+}
+.nav-menu > .menu-group > span {
+  margin-left: 20px;
+  color: white;
+}
+.menu-group {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+}
+.menu-group:hover {
+  border-radius: 24px;
+  background-color: #16181c;
+  cursor: pointer;
+  display: inline-flex;
+}
+.tweet-btn {
+  height: 52px;
+  width: 225px;
+  margin: 16px 0;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 52px;
+  background-color: #219bf0;
+  color: white;
+  border: none;
+}
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 1;
+}
+.profile {
+  height: 64px;
+  width: 100%;
+  margin: 12px 0px;
+  background-color: #16181c;
+  border-radius: 64px;
+}
+
+
+
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  background-color: black;
+  padding: 0px 16px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+.title{
+  width: 100%;
+  height: 54px;
+  display: flex;
+  padding: 0 16px;
+  align-items: center;
+  color: white;
+}
+.tweet-section{
+  display: flex;
+  padding: 0 16px;
+  border-bottom: 1px rgba(255, 255, 255,0.3) solid;
+}
+.tweet-profile{
+  width: 48px;
+  height: 108px;
+  margin-right: 12px;
+}
+.profile-image{
+  width: 48px;
+  height: 48px;
+  border-radius: 48px;
+  cursor: pointer;
+  background-color: white;
+}
+.write-tweet{
+  flex: 1;
+}
+input[type='text']{
+  width: 100%;
+  height: 52px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+}
+.icon-section{
+  width: 100%;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+.icon img{
+  cursor: pointer;
+}
+button[type='submit']{
+  width: 84px;
+  height: 48px;
+  cursor: pointer;
+  border-radius: 52px;
+  background-color: #219bf0;
+  color: white;
+  border: none;
+}
+.feed{
+  flex: 1;
+}
+.tweet{
+  display: flex;
+  padding: 0 16px;
+  padding-top: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.tweet-content{
+  flex: 1;
+  position: relative;
+}
+.name{
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+.name > span{
+  opacity: 0.5;
+}
+.text-content{
+  color: white;
+  font-size: 14px;
+}
+.tweet-photo{
+  width: 408px;
+  height: 510px;
+  background-color: #219bf0;
+  border-radius: 16px;
+  margin-top: 12px;
+}
+.action-group{
+  display: flex;
+  width: 408px;
+  justify-content: space-between;
+  margin: 12px 0px;
+}
+.action span{
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: 12px;
+  font-size: 14px;
+}
+.action{
+  display: flex;
+  align-items: center;
+}
+.more-btn{
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+  transition: all 0.3s ease-in-out;
+}
+.more-btn:hover{
+  background-color: #16181c;
+  cursor: pointer;
+}
+.trend-container , 
+.account-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #16181c;
+  border-radius: 16px;
+}
+.trend , .account{
+  height: 82px;
+  padding: 12px 16px;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.account{
+  height: 72px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.trend > span:nth-child(3), .account-name > span:nth-child(1){
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+}
+.account-name > span:first-child > img{
+  width: 16px;
+  height: 16px;
+  margin-left: 4px;
+}
+h2{
+  color: white;
+  padding-left: 16px;
+}
+.show-more{
+  color: rgb(29, 155, 240);
+  padding: 16px;
+}
+.account-container{
+  margin-top: 16px;
+}
+.account-name{
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  margin-left: 12px;
+  justify-content: space-between;
+}
+.follow-btn{
+  width: 96px;
+  height: 32px;
+  padding: 0 16px;
+  border-radius: 18px;
+  border: none;
+  font-weight: bold;
+}
+.account-section{
+  display: flex;
+  align-items: center;
+}
+.footer{
+  display: inline-block;
+  color: rgba(255, 255, 255,0.3);
+  font-size: 12px;
+  margin: 24px;
+}
+.footer > a {
+  margin-right: 8px;
+  margin-top: 4px;
+}

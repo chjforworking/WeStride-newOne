@@ -1,0 +1,42 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: crimson;
+    border: 1px solid white;
+    
+}
+
+.container1{
+    width: 800px;
+    height: 800px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container2{
+    width: 800px;
+    height: 800px;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+}
+
+.container3{
+    width: 800px;
+    height: 800px;
+    background-color: aquamarine;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.container4{
+    width: 800px;
+    height: 800px;
+    background-color:thistle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

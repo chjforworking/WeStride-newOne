@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Race Register Form</h1>
+    <!--First Last ต้องใส่ Email ต้องเป็น Email จริงๆ Password Vertify 10ตัว กรอกข้อมูลแล้วต้อง Submit ได้-->
+    <form action="/register">
+        <p>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" required>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" required>
+        </p>
+        <p>
+            <b>Select A Race</b>
+            <input type="radio" name="Select" value="fr" id="funrun">
+            <label for="funrun">Fun Run</label>
+            <input type="radio" name="Select" value="hm" id="halfmarathon">
+            <label for="halfmarathon">Half Marathon</label>
+            <input type="radio" name="Select" value="fm" id="fullmarathon">
+            <label for="fullmarathon">Full Marathon</label>
+            <!--name กับ value ไม่ต้องใส่ก็ได้ จะใส่เมื่อต้องการส่งค่าไปยัง backend-->
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" minlength="8" required>
+        </p>
+        <p>
+            <label for="group">Group</label>
+            <select name="group" id="group">
+                <option value="a">A</option>
+                <option value="b">B</option>
+                <option value="c">C</option>
+                <option value="d">D</option>
+        </p>
+        <input type="submit">
+    </form>
+</body>
+</html>

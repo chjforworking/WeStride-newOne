@@ -1,0 +1,26 @@
+/*
+transition-property
+transition-duration
+transition-timing-function
+transition-delay
+*/
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: thistle;
+    transition-property: transform;
+    transition-duration: 3s;
+    transition-timing-function: ease-out;
+    transition-delay: 1s;
+
+    /*
+    แบบย่อของ transition
+    transition: transform 3s ease-out 1s;
+    */
+    
+}
+
+.container:hover .box{
+    transform: translateX(500px);
+}

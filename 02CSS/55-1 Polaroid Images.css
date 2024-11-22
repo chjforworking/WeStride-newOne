@@ -1,0 +1,18 @@
+.polaroid-card {
+  display: inline-block;
+  background-color: rgb(139, 138, 137);
+  padding: 10px;
+}
+
+.polaroid-card-caption {
+  text-align: center;
+  font-size: large;
+  font-weight: 500;
+  color: aliceblue;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+}
+
+h1{
+    text-align: center;
+}

@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: goldenrod;
+}
+.clock{
+    margin: 60px;
+    width: 120px;
+    height: 120px;
+    border: 6px solid white;
+    border-radius: 50%;
+    position: relative;
+}
+
+.clock::before{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 30px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform-origin: 50% 0%;
+    animation: rotate 2s linear infinite;
+}
+
+.clock::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 48px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform-origin: 50% 0%;
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}

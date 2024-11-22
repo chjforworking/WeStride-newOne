@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 24px;
+  padding: 0px;
+  background-color: red
+}
+.butt {
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 1px solid gray;
+  cursor: pointer;
+  background-color: white;
+}
+.proj {
+  border-right: none;
+}
+.left-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: goldenrod;
+}

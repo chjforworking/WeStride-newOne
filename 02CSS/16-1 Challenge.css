@@ -1,0 +1,55 @@
+/*1ให้ element body เป็นพื้นหลังสี #bdc3c7*/
+body{color:#bdc3c7;}
+/*2ให้ element h1 มีสี #9b59b6*/
+h1{color:#9b59b6;}
+/*3ให้ element h2 ทั้งหมด เป็นสีส้ม */
+h2{color:orange;}
+/*4ให้ element li ทั้งหมด เป็นสีน้ำเงิน*/
+li{color:blue;}
+/*5เปลี่ยนพื้นหลังในทุกๆ ย่อหน้าให้เป็นสีเหลือง*/
+p{background-color: yellow;}
+/*6ให้ inputs ทั้งหมดมีกรอบ (border) สีแดงขนาด 3px.*/
+input{
+    border-style: solid;
+    border-color:red;
+    border-width:3px;
+    ;}
+/*7ให้ทุกอย่างใน class ‘Hello’ มีพื้นหลังสีขาว */
+.hello{
+    background-color: white;
+}
+/*8ให้ element ที่มี id = Special มีกรอบ (border) ทึบขนาด 2px. (เลือกค่าสี rgb ของคุณเอง) */
+#special{
+    border-style:solid;
+    border-color:rgb(250,125,000);
+    border-width:2px;
+}
+/*9element p ที่อยู่ภายใน element div ทั้งหมดมี font ขนาด 25px*/
+div p{font-size:25px;}
+/*10ให้ element input ที่มี type = text มีพื้นหลังสีเทา*/ 
+input[type="text"] {
+    background-color: gray;}
+/*11ให้ element p ทุกตัวที่อยู่ภายใน element div ลำดับตัวที่ 3 มีพื้นหลังสีชมพู*/
+div:nth-of-type(3) p {
+    background-color: pink;
+}
+/*12ให้ element ใน div ลำดับที่ 3 เป็น สีขาว และมีขนาดอักษร 20px */
+div:nth-of-type(3){
+    color:white;
+    font-size: 20px;
+}
+/*13ทำ element label ทั้งหมดตัวใหญ่ (UPPERCASE) โดยไม่แปลง HTML*/
+label{text-transform: uppercase;}
+/*14กำหนดตัวอักษรตัวแรกของ element ที่มี id = Special ให้เป็นสีเขียว และมีขนาด 100px */
+#special::first-letter{
+    color: green;
+    font-size: 100px;
+}
+/*15ให้ element h1 เปลี่ยนเป็นสีน้ำเงินเมื่อ hover (วางเมาส์ไว้ข้างบน) */
+h1:hover{
+    color: blue;
+}
+/*16ให้ element a ที่คุณได้กด จะเป็นสีเทา*/
+a:active{
+    color:gray;
+}

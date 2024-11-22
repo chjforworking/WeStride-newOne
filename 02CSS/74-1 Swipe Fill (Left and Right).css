@@ -1,0 +1,65 @@
+body{
+    background-color: beige;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.title-page{
+    margin-top: 50px;
+    font-size: 48px;
+}
+
+.button{
+    background-color: aliceblue;
+    font-size: 24px;
+    padding: 10px;
+    margin: 12px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.button.left::before{
+    content: '';
+    background-color:darkseagreen;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    transition: left 3s ;
+    z-index: 1;
+}
+
+.button.left:hover::before{
+    left:0;
+}
+.button.left span{
+    position: relative;
+    z-index: 2;
+    transition: 3s color
+}
+
+
+
+
+.button.right::before{
+    content: '';
+    background-color:darkseagreen;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    transition: right 3s ;
+    z-index: 1;
+}
+
+.button.right:hover::before{
+    right:0;
+}
+.button.right span{
+    position: relative;
+    z-index: 2;
+    transition: 3s color
+}

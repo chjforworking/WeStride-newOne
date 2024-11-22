@@ -1,0 +1,9 @@
+table,tr,td,th{
+    border: 2px solid rgba(255, 99, 71, 0.502);
+    color: rgb(1, 69, 1);
+    width: 500px;
+}
+
+th{
+    background-color: tomato;
+}

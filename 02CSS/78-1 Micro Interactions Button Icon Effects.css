@@ -1,0 +1,79 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: steelblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.title{
+    margin-top: 60px;
+}
+
+.button{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    border-radius: 6px;
+    font-size: 24px;
+    width: 108px;
+    height: 72px;
+    padding: 12px;
+    margin: 12px;
+    cursor: pointer;
+}
+.button.accept{
+    background-color: yellowgreen;
+    overflow: hidden;
+}
+.button.accept .action{
+    display: block;
+    transition: transform 2s,opacity 2s;
+}
+.button.accept:hover .action{
+    transform: translateY(-200%);
+    opacity: 0;
+}
+.button.accept .fa.fa-check{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    left:0;
+    bottom:-100%;
+    transition: bottom 2s;
+}
+.button.accept:hover .fa.fa-check{
+    bottom: 0;
+}
+
+
+
+
+.button.delete{
+    background-color: orangered;
+    overflow: hidden;
+}
+.button.delete .action{
+    display: block;
+    transition: transform 2s,opacity 2s;
+}
+.button.delete:hover .action{
+    transform: translateY(-200%);
+    opacity: 0;
+}
+.button.delete .fa.fa-remove{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    left:0;
+    bottom:-100%;
+    transition: bottom 2s;
+}
+.button.delete:hover .fa.fa-remove{
+    bottom: 0;
+}

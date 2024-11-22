@@ -1,0 +1,13 @@
+.container{
+    background-color: teal;
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: center;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: chocolate;
+    border: 1px solid;
+}

@@ -1,0 +1,9 @@
+/*ข้อแตกต่างของ Descendant กับ Child*/
+/*ถ้าเป็น Child คือ ทุกตัวที่อยู่ภายใต้ Parent(อยู่ต่ำกว่า Parent)*/
+/*ถ้าเป็น Decendant คือไม่จำเป็นที่จะต้องอยู่ภายใต้ Parent*/
+div > h1{
+    color:violet;
+}
+div > span{
+    color:blue;
+}

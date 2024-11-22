@@ -1,0 +1,51 @@
+.container{
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,100px);
+    gap: 10px;
+}
+
+.item1{
+    background-color: goldenrod;
+    padding-left: 100px;
+    padding-top: 40px;
+    grid-row: 2/span 3;
+    grid-column: 2/span 2;
+}
+
+.item2{
+    background-color: chartreuse;
+    padding-left: 100px;
+    padding-top: 40px;
+}
+
+.item3{
+    background-color: chartreuse;
+    padding-left: 100px;
+    padding-top: 40px;
+}
+
+.item4{
+    background-color: chartreuse;
+    padding-left: 100px;
+    padding-top: 40px;
+}
+
+.item5{
+    background-color: chartreuse;
+    padding-left: 100px;
+    padding-top: 40px;
+}
+
+.item6{
+    background-color: chartreuse;
+    padding-left: 100px;
+    padding-top: 40px;
+}
+
+.item7{
+    background-color: chartreuse;
+    padding-left: 100px;
+    padding-top: 40px;
+}

@@ -1,0 +1,80 @@
+body{
+    background-color:darkgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    margin-top: 48px;
+}
+.wrapper{
+    width: 1200px;
+    height: 480px;
+    perspective: 1200px;
+    display: flex;
+}
+.card-wrapper{
+    position: relative;
+    transform-style: preserve-3d;
+    width: 360px;
+    height: 480px;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    margin: 12px;
+}
+.card-wrapper.first:hover{
+    transform: rotate3d(0,1,0,180deg);
+    transition: all 1.5s;
+}
+.card-wrapper.second:hover{
+    transform: rotate3d(1,0,0,180deg);
+    transition: all 1.5s;
+}
+.card-wrapper.third:hover{
+    transform: rotate3d(1,1,0,180deg);
+    transition: all 1.5s;
+}
+.front , .back {
+    position: absolute;
+    box-sizing: border-box;
+    width: 360px;
+    height: 480px;
+    background-color: white;
+    margin: 12px;
+    box-shadow: 0 4px 24px 0 black;
+    border-radius: 6px;
+    padding: 12px;
+    backface-visibility: hidden;
+}
+.front img{
+    width: 100%;
+    height: auto;
+}
+.back {
+    background-color: gray;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(180deg);
+}
+.second .back{
+    transform: rotate3d(1,0,0,180deg);
+}
+.third .back{
+    transform: rotate3d(1,1,0,180deg);
+}
+.back h2{
+    font-size: 36px;
+}
+.back a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    border: 1px solid white;
+    padding: 12px 36px;
+}

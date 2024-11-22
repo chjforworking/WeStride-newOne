@@ -1,0 +1,16 @@
+/*
+cubic-bezier(x1,y1,x2,y2)
+1.x1 and x2 กำหนดการเปลี่ยนแปลงในแกน Time
+2.y1 and y2 กำหนดการเปลี่ยนแปลงในแกน Value
+*/
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: firebrick;
+  transition: width 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+div:hover {
+  width: 300px;
+}

@@ -1,0 +1,24 @@
+.rotation{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transform: rotate(45deg);
+    /*rotate สามารถใส่ค่าเข้าไปได้หลายแบบ deg หรือ turn*/
+    margin: 30px;
+}
+
+.skew{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    transform: skew(30deg,20deg);
+    margin: 30px;
+}
+
+.scale{
+    width: 100px;
+    height: 100px;
+    background-color: goldenrod;
+    transform: scale(0.5);
+
+}

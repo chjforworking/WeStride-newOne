@@ -1,0 +1,32 @@
+.button{
+    border-right: 1px solid black;
+    padding-right: 10px;
+}
+.button:active{
+    color: goldenrod;
+}
+.dog{
+    min-width: 200px;
+    max-width: 300px;
+    background-color: goldenrod;
+    padding: 5px;
+    border-right: 5px solid red;
+    margin: 5px;
+}
+.dog:hover{
+    background-color: aqua;
+}
+.input1{
+    width: 500px;
+    border-top: 5px solid #4c5270;
+    margin-bottom: 5px;
+}
+
+.input2{
+    width: 500px;
+    margin-bottom: 5px;
+}
+
+#login{
+    width: 507px ; color: white; background-color: #4682b4;
+}
