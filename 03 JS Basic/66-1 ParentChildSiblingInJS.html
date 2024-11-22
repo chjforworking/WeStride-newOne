@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+        const bolder = document.querySelector('b');  //ยึด <b> เป็นหลัก
+        bolder.parentElement;//เข้าหาตัว parent ของ b คือ <p>
+        bolder.parentNode;//เหมือนกับ parentElement เลย
+        bolder.parentElement.parentElement; //ยึดจากตัว <b> ออกไปหา <body> เป็นการกลับไปสองครั้ง
+        const parent = bolder.parentElement; //สร้างตัวแปรเพื่อมาเป็น parent
+        parent.children; //เป็นคำสั่งที่เอาไว้เช็คว่าใน parent มี children ตัวไหนบ้าง
+        parent.childElementCount; // Check จำนวน child
+        const wan = document.querySelector('.one')//
+        wan.nextElementSibling;//หา sibling ตัวถัดไป คำตอบเป็น <div class = "two">2</div>
+        
+    </script>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum <b>Hello</b> dolor sit amet consectetur adipisicing elit. Quam voluptatum
+      iure ipsa magnam, molestias veniam adipisci. A vel perspiciatis, deserunt
+      ratione mollitia, excepturi illo laborum nam possimus minima, provident
+      iusto!
+    </p>
+    <div class="one">1</div>
+    <div class="two">2</div>
+    <div class="three">3</div>
+  </body>
+</html>

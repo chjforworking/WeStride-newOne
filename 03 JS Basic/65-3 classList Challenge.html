@@ -29,9 +29,13 @@ li {
         <li>Hello</li>
     </ul>
     <script>
-        document.querySelector('li').forEach(element => {element.classList.add('highlight')});
-        document.querySelectorAll('.highlight').forEach(element => {element.classList.remove('highlight');} );
-        
+        for (let element of document.querySelectorAll('li')){
+            if (element.classList.contains('highlight')){
+                element.classList.remove('highlight');
+            } else {
+                element.classList.add('highlight');
+            }
+        }
     </script>
 </body>
 
