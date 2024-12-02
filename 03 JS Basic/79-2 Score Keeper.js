@@ -1,44 +1,52 @@
-let oneDisplay = document.querySelector(".p1Display");
-let twoDisplay = document.querySelector(".p2Display");
-
-let btnOne = document.querySelector(".btnOne");
-let btnReset = document.querySelector(".reset");
-let btnTwo = document.querySelector(".btnTwo");
-
-let oneScore = 0;
-let twoScore = 0;
-let winScore = 5;
+let btnReset = document.querySelector("#reset");
+let matching = document.querySelector("#match");
 let isGameOver = false;
-let match = document.querySelector(".match");
 
-btnOne.addEventListener("click", () => {
-  if (!isGameOver) {
-    oneScore += 1;
-    if (oneScore == winScore) {
-      isGameOver = true;
-    }
-  }
-  oneDisplay.textContent = oneScore;
-});
-btnTwo.addEventListener("click", () => {
-  if (!isGameOver) {
-    twoScore += 1;
-  }
-  if (twoScore == winScore) {
-    isGameOver = true;
-  }
-  twoDisplay.textContent = twoScore;
+let p1 = {
+  score : 0,
+  button : document.querySelector("#btnOne"),
+  display : document.querySelector("#p1Display"),
+}
+
+let p2 = {
+  score : 0,
+  button : document.querySelector("#btnTwo"),
+  display : document.querySelector("#p2Display"),
+}
+
+btnOne.addEventListener("click", function (){
+  updateScore(p1,p2)})
+btnTwo.addEventListener("click", function(){
+  updateScore(p2,p1)})
+btnReset.addEventListener("click", function(){
+  reset();
 });
 
-btnReset.addEventListener("click", () => {
+matching.addEventListener("change", function () {
+  winScore = Number(this.value);
+  reset();
+});
+
+function reset() {
   isGameOver = false;
-  oneScore = 0;
-  twoScore = 0;
-  oneDisplay.textContent = oneScore;
-  twoDisplay.textContent = twoScore;
-});
+  p1.score = 0;
+  p2.score = 0;
+  p1.display.classList.remove("loser", "winner");
+  p2.display.classList.remove("winner", "loser");
+  p1.button.disabled = false;
+  p2.button.disabled = false;
+}
 
-match.addEventListener('change', () => {
-  winScore = Number(this.value)
-  
-})
+function updateScore(player , opponent){
+  if(!isGameOver) {
+    player.score += 1;
+    if(player.score == winScore){
+      isGameOver = true;
+      player.display.classList.add('winner');
+      opponent.display.classList.add('loser');
+      player.button.disable = true;
+      opponent.button.disable = true;
+    }
+    player.display.textContent = player.score;
+  }
+}

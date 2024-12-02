@@ -1,0 +1,4 @@
+//แปลงจาก string -> array
+function(){
+    
+}
