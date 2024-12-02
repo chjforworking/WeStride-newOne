@@ -1,4 +1,7 @@
 //แปลงจาก string -> array
-function(){
-    
+function strToArr(str){
+    let array = Array.from(str)
+    console.log(array);
 }
+
+strToArr("Hello");
