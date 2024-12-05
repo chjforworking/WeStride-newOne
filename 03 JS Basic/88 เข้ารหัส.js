@@ -7,12 +7,16 @@ function decode(str){
     for (const x of splitStr) {
         let inputIndex = aToZ.indexOf(x) ;//1,2,3
         let nextIndex = inputIndex + 5;
-        let nextValue = aToZ[nextIndex];
+        let ansValue = aToZ[nextIndex];
+        if(){
+            
+        }
     }
 }
 
 
 
 
+console.log(decode("xvo"));
 
 //decode(str)
