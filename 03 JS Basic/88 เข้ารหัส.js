@@ -16,4 +16,18 @@ function decrypt(str){
     console.log(ansArr.join(","));
 }
 
-decrypt("uryyb")
+function createcrypt(str){
+    let splitStr = str.split("");
+    for (const x of splitStr) {
+        let inputIndex = aToZ.indexOf(x); //1 2 3 4 5
+        let secIndex = (inputIndex + 13) % 26;
+        let value = aToZ[secIndex];
+        ansArr.push(value)
+    }
+    console.log(ansArr.join(","));
+}
+
+// decrypt("uryyb")
+console.log('/////////');
+// createcrypt("hello india")
+decrypt("uryybvaqvn")
