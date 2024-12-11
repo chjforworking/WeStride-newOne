@@ -1,29 +1,17 @@
 //เอา input ไปหาร 3 และ 11 ได้เศษเท่าไรโดยห้ามใช้ modulo
-// 18 -> 0กับ7 , 167 -> 2กับ1
+// 18 -> 0กับ7 , 167 -> 2กับ2
 
-function calculate(x){
-    if(x/3 == 0){
-       console.log(0);
-    }else if (x/3 != 0){
-        let remain = x/3
-    }
+function findRemain(num) {
+  let remainThree = num;
+  let remainEleven = num;
+
+  while (remainThree >= 3) {
+    remainThree -= 3;
+  }
+  while (remainEleven >= 11) {
+    remainEleven -= 11;
+  }
+  return [`หากหาร 3 จะได้ ${remainThree} / หากหาร 11 จะได้ ${remainEleven}`]
 }
 
-
-// function calculate(x){
-//     let dThree = x/3;
-//     let realValue = dThree;
-//     let quotientOne = Math.floor(realValue);
-//     let remainOne = realValue - quotientOne;
-
-//     let dEle = x/11;
-//     let realValueEle = dEle;
-//     let quotientTwo = Math.floor(realValueEle);
-//     let remainTwo = realValueEle - quotientTwo;
-
-//     console.log(remainOne);
-//     console.log(remainTwo);
-// }
-
-// calculate(18);
-// calculate(167);
+console.log(findRemain(1285));
