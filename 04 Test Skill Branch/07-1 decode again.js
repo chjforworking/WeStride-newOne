@@ -25,5 +25,5 @@ function crecode(str) {
   console.log(newArr02.join(""));
 }
 
-crecode("cat");
-decode("xvo");
+crecode("hello");
+decode("czggj");
