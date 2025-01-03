@@ -1,10 +1,10 @@
-//https://swapi.dev/api/people/1/
-
+//https://swapi.py4e.com/api/people/1/
 const req = new XMLHttpRequest();
 
 req.onload = function () {
   console.log("Success");
-  console.log(this);
+  const res = JSON.parse(this.responseText);
+  console.log(res.name);
 };
 
 req.onerror = function () {

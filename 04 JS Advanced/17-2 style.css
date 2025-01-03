@@ -1,0 +1,9 @@
+h1{color: red;}
+button:active{background-color: green;}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aqua;
+}
