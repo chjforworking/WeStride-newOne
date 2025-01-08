@@ -1,9 +1,7 @@
 //ลบเครื่องหมาย ! ออกจากท้ายของ string
-
 function remove(str) {
-  let lastIndex = str.lastIndexOf("!");
-  if (lastIndex !== -1) {
-    console.log(str.slice(0, lastIndex) + str.slice(lastIndex + 1));
+  if (str.length > 0 && str.charAt(str.length-1)==='!') {
+    console.log(str.slice(0, -1));
   } else {
     console.log(str);
   }

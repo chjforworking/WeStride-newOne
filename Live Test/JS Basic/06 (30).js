@@ -4,17 +4,14 @@
 diffArray ([1, 2, 3], [100, 2, 1, 10]) => [ 3, 10, 100 ]
 */
 
-
-
-//Code สามารถ Run ได้ทาง Inspect บน Browser แต่กด Run Code ไม่ได้
-let arr1 = [1, 2, 3];
-let arr2 = [100, 2, 1, 10];
-function diffArray(arr1,arr2){
-    let set1 = new Set(arr1);
-    let set2 = new Set(arr2);
-    let diff = [...set1.symmetricDifference(set2)];
-    let result = diff.sort((a,b) => a - b);
-    console.log(result);
+function diffArray(arr1, arr2) {
+  let merge = arr1
+    .concat(arr2)
+    .filter((item) => !arr1.includes(item) || !arr2.includes(item));
+  let minMax = merge.sort((a, b) => a - b);
+  console.log(minMax);
 }
 
-diffArray(arr1,arr2);
+let arr1 = [1, 2, 3];
+let arr2 = [100, 2, 1, 10];
+diffArray(arr1, arr2);

@@ -1,0 +1,4 @@
+เขียนฟังก์ชั่น return promise object ที่มีการ delay 3 วิ
+หลังจากนั้นให้ฟังก์ชั่นมีการ resolve <random number 0-100>
+และให้ใช้ค่าจากการ resolve ไปแสดงข้อความบนหน้าจอ ว่า  “Data is <number>” (ตัวเลขให้ random 0-100) 
+(โดยให้เขียนออกมา 2 แบบ คือ 1. async / await และ 2.then / catch methods)
