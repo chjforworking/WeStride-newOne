@@ -3,8 +3,8 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import searchImg from "./Api";
 
-searchImg("dog").then((res) => {
-  console.log(res);
+searchImg("dog").then((result) => {
+  console.log(result);
 });
 
 const el = document.querySelector("#root");
