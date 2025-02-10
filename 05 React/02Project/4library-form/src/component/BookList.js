@@ -1,14 +1,15 @@
 import BookShow from "./BookShow";
-import { useContext } from "react";
-import BooksContext from "../context/book";
+import useBooksContext from "../hooks/use-books-context";
 
-function BookList({ books, onDelete, onEdit }) {
-  const value = useContext(BooksContext)
+function BookList() {
+  const { books } = useBooksContext(); //Custom Hooks
+
   const renderedBooks = books.map((book) => {
     return (
-      <BookShow onEdit={onEdit} key={book.id} book={book} onDelete={onDelete} />
+      <BookShow key={book.id} book={book} /> //นี่เป็น props ที่ยังจำเป็นอยู่
     );
   });
+
   return <div className="book-list">{renderedBooks}</div>;
 }
 
