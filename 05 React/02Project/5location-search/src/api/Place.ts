@@ -1,8 +1,8 @@
-interface Place {
+export interface Place {
     id : number;
     name: string;
     longitude : number;
     latitude : number;
 }
 
-export default Place; //import {Place} from '/...'
+//import {Place} from '/...'
