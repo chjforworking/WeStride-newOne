@@ -5,4 +5,4 @@ export interface Place {
     latitude : number;
 }
 
-//import {Place} from '/...'
+//import type {Place} from '/...'
